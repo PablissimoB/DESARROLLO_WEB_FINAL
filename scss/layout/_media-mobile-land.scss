@@ -1,0 +1,110 @@
+@media(max-width:980px ) and (orientation: landscape) {
+    .desktop{
+        display: contents;
+        
+        header{
+            height: 14vh;
+            .col-8{
+                height: 14vh;
+            }
+            .col-2{
+                img{
+                    width: 80px;
+                }
+                font-size: 13px;
+            }
+        }
+        main{
+
+            .orderImg{
+                width: 25px;
+            }
+            h1{
+                padding-left: 10px;
+                font-size: 16px;
+            }
+            .menu{
+                height: 60vh;
+                .detalle{
+                    table{
+                        margin-top: 20vh;
+                    }
+                }
+                h2{
+                    font-size: 15px;
+                }
+            }
+            .imagen{
+                display: none;
+            }
+            h3{
+                font-size: 16px;
+            }
+            p{
+                font-size: 14px;
+            }
+            .bottom{
+                height: 14vh;
+                .col-2{
+                    height: 14vh;
+                }
+                .col-8{
+                    font-size: 12px;
+                }
+            }
+            .col-8{
+                .tray{
+                    .absolute {
+                        .col-3 {
+                            button{
+                                width: 60px;
+                                height: 60px;
+                                margin-top: 10vh;
+                            }
+                            .descriptionFood{
+                                display: none;
+                        }
+                        }
+                    } 
+                } 
+            } 
+
+            .information{
+                margin-top: 0px;
+                .col-4{
+                    select{
+                        margin-top: 9px;
+                    }
+                }
+                .row{
+                    .buttonOrder{
+                        margin-top: 20px;
+                        
+                    }
+                }
+            }
+            .detail{
+                .row{
+                    .col-1{
+                        .delete{
+                            margin-top: 10px;
+                            width: 22px;
+                            border: none;
+                            .trashIcon{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+        footer{
+            margin-top: 15vh;
+            font-size: 13px;
+        }
+    }
+    .mobile{
+        display: none;
+    }
+}

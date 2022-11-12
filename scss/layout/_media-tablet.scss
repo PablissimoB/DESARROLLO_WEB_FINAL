@@ -1,0 +1,56 @@
+/*Media Tablets*/
+@media (min-width:769px)  and (max-width:992px) {
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: contents;
+    }
+    header{
+        height: 15vh;
+        col{
+            
+        }
+    }
+    main{
+        h3{
+            font-size: 20px;    
+        }
+        height: 64vh;
+        font-size: 15px;
+
+        .tray{
+            .row{
+                @include displayFlex('',center,center);
+            }
+
+            .imgTray{
+                margin-top: 10%;
+                width: 100%;
+                height: 52vh;
+            }
+            .absolute{
+                position: absolute;
+                top: 30vh;
+                left: 47vw;
+                width: 58%;
+                display: flex;
+                div{
+                    @include displayFlex(column,center,center);
+                }
+                button{
+                    margin-bottom: 15px;
+                    margin-right: 25px;
+                    width: 16vw;
+                }
+                .imgFood{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    footer{
+        height: 20vh;
+    }
+
+}

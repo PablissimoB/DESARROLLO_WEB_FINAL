@@ -1,0 +1,11 @@
+@mixin displayFlex ($direction, $justify, $align ) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items:$align;
+};
+@mixin fontH1 ($size) {
+    color: $font-white;
+    font-size: $size;
+    margin-top: 3%;
+};

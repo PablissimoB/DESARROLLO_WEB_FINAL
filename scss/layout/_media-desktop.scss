@@ -1,0 +1,9 @@
+/*Media Escritorio*/
+@media(min-width:992px) {
+    .desktop{
+        display: contents;
+    }
+    .mobile{
+        display: none;
+    }
+}

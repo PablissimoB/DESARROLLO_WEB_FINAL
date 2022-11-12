@@ -1,0 +1,64 @@
+.mobile header{
+    border: 1px solid black;
+    .row{
+        @include displayFlex(row,'','');
+    }
+    .col{
+        @include displayFlex(row,center,center);
+    }
+    nav{
+        background-color: $background-black;
+        ul{
+            list-style: none;
+            li{
+                margin-bottom: 5px;
+                a{
+                    text-decoration: none;
+                    color: $font-white;
+                }
+                a:hover{
+                    color: $hover-gray;
+                }
+                
+            }
+        }
+    }
+}
+.desktop header{
+    @include displayFlex(row,center,center);
+    border: 1px solid black;
+    .col-2{
+        @include displayFlex(row,center,center);
+        height: 12vh;
+        ul{
+            @include displayFlex(column,center,'');
+            list-style: none;
+            li{
+                a{
+                    text-decoration: none;
+                    color: $font-black;
+                }
+            }
+        }
+    }
+    .col-8{
+        @include displayFlex('','',center);
+        height: 12vh;
+        background-color: $background-black;
+        ul{
+            @include displayFlex('','','');
+            list-style: none;
+            width: 100%;
+            li{
+                margin-left: 10%;
+                a{
+                    text-decoration: none;
+                    color: $font-white;
+                }
+                a:hover{
+                    color: $hover-gray;
+                }
+            }
+        }
+    }
+}

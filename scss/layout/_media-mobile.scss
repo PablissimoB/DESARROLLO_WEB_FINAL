@@ -1,0 +1,126 @@
+/*Media Smartphones*/
+/*Fold*/
+@media (min-width: 280px) and (max-width: 320px) {
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: contents;
+    }
+
+    header{
+        h1{
+            font-size: 16px;
+        }
+        height: 15vh;
+    }
+    main{
+        h1{
+            font-size: 15px;
+        }
+        h3{
+            font-size: 16px;    
+        }
+        height: 50vh;
+        font-size: 12px;
+        .menues{
+            ul{
+                margin-left: -20px;
+            }
+        }
+
+        .tray{
+            .row{
+                @include displayFlex('',center,center);
+            }
+
+            .imgTray{
+                margin-top: 15%;
+                margin-left: -5%;
+                width: 100%;
+                height: 44vh;
+            }
+            .absolute{
+                position: absolute;
+                top: 30vh;
+                left: 29.5vw;
+                width: 60%;
+                display: flex;
+                div{
+                    @include displayFlex(column,'','');
+                }
+                button{
+                    margin-bottom: 10px;
+                    margin-right: 13px;
+                    width: 18vw;
+                }
+                .imgFood{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    footer{
+        h1{
+            font-size: 16px;
+        }
+        height: 30vh;
+        .resume{
+            div{
+                font-size: 12px;
+            }
+        }
+    }
+}
+/*Resto*/
+@media(min-width: 321px) and  (max-width:768px) {
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: contents;
+    }
+    header{
+        height: 15vh;
+    }
+    main{
+        h3{
+            font-size: 18px;    
+        }
+        height: 64vh;
+        font-size: 13px;
+        .tray{
+            .row{
+                @include displayFlex('',center,center);
+            }
+
+            .imgTray{
+                margin-top: 15%;
+                width: 100%;
+                height: 52vh;
+            }
+            .absolute{
+                position: absolute;
+                top: 30vh;
+                left: 42vw;
+                width: 58%;
+                display: flex;
+                div{
+                    @include displayFlex(column,center,center);
+                }
+                button{
+                    margin-bottom: 15px;
+                    margin-right: 13px;
+                    width: 19vw;
+                }
+                .imgFood{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    footer{
+        height: 20vh;
+    }
+}

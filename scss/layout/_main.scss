@@ -1,0 +1,300 @@
+.mobile main{
+    border: 1px solid black;
+    .col-4{
+        background-color: $background-black;
+        h1{
+            @include fontH1(18px);
+        }
+        h2{
+            font-size: 18px;
+            color: white;
+        }
+        ul{
+            list-style: none;
+            li{
+                margin-top: 2.5%;
+                margin-left: -10%;
+                a{
+                    text-decoration: none;
+                    color: $font-white;
+                }
+                a:hover{
+                    color: $hover-gray;
+                }
+            }
+        }
+    }
+    .col-8{
+        p{
+            text-indent: 5%;
+        }
+    }
+    .mapMobile{
+        width: 100%;
+        height: 60vh;
+    }
+    .orderImg{
+        width: 30px;
+    }
+    .quantities{
+        margin-top: 37.5px;
+        input{
+            margin-top: 5px;
+            border-radius: 20px;
+            width: 60%;
+            text-align: center;
+        }
+    }
+    .check{
+        background-color: $background-black;
+        h1{
+            @include fontH1(18px);
+        }
+        .detailMob{
+            input{
+                width: 100%;
+                margin-top: 5px;
+                border-radius: 20px;
+                text-align: center;
+            }
+
+        }
+    }
+    .delete{
+        margin-top: 5px;
+        width: 20px;
+        border: none;
+        .trashIcon{
+            width: 100%;
+        }
+    }
+
+
+}
+
+.desktop main{
+    h1{
+        @include fontH1(20px);
+    }
+    h3{
+        font-size: 20px;
+        color: $font-black; 
+    }
+    p{
+        font-size: 18px;
+        color: $font-black; 
+        text-indent: 5%;
+    }
+    ul{
+        list-style: none;
+    }
+    .orderImg{
+        width: 40px;
+    }
+    .main{
+        height: 62vh;
+        h2{
+            font-size: 20px;
+            color: white;
+        }
+        .menu{
+            height: 62vh;
+            background-color: $background-black;
+
+            ul{
+                @include displayFlex(column,center,'');
+                li{
+                    margin-top: 2.5%;
+                    a{
+                        text-decoration: none;
+                        color: $font-white;
+                    }
+                    a:hover{
+                        color: $hover-gray;
+                    }
+                }
+            }
+
+            .detalle{
+                @include displayFlex(row,'',end);
+            }
+            table{
+                margin-top: 40vh;
+                color: $font-white;
+            }
+        }
+        .col-8{
+            @include displayFlex(row,center,center);
+            .padding{
+                padding-left:8%;
+            }
+
+            .ubicacion{
+                width: 100%;
+            }
+            .imagen{
+                border-radius: 5%;
+                width: 68%;
+                max-width: 820px;
+                min-width: 200px;
+                margin-left: 2vw;
+                margin-right: 2vw;
+                margin-bottom: 1vh;
+            }
+            .map{
+                height: 60vh;
+                width: 100%;
+            }
+            .tray{
+                width: 100%;
+                .imgTray{
+                    margin-top: 2%;
+                    width: 100%;
+                    height: 50vh;
+                }
+                .absolute {
+                    position: absolute;
+                    top: 23vh;
+                    left: 22vw;
+                    right: 15vw;
+                    display: flex;
+                    button{
+                        width: 53%;
+                        background-color: transparent;
+                        border: none;
+                        max-width: 200px;
+                    }
+                    button:hover{
+                        opacity: 0.6;
+                        transition: 1s;
+                    }
+                    button:active{
+                        border: 2px solid green;
+                        transition: 0.2s;
+                    }
+                  }
+                  .imgFood{
+                    width: 100%;
+                    
+                }
+                .descriptionFood{
+                    @include displayFlex(column,center,center);
+                    margin-left: 3%;
+                    border-radius: 10px;
+                    background-color: #D9D9D9;
+                    width: 45%;
+                    max-width: 200px;
+                    font-size:90%;
+                    p{
+                        font-size: small;
+                    }
+                    ul{
+                        margin-left: -12%;
+                        list-style:circle;
+                        li{
+                            font-size:75%;
+                        }
+                    }
+                }
+                .absoluteBL{
+                    color: transparent;
+                    position: absolute;
+                    top: 37vh;
+                    left: 17vw;
+                    bottom: 48vh;
+                    width: 3.5%;
+                    opacity: 0;
+                    border: none;
+                }
+                .absoluteBL:hover{
+                    cursor: pointer;
+                }
+                .absoluteBR{
+                    color: transparent;
+                    position: absolute;
+                    top:  37vh;
+                    left: 79vw;
+                    bottom: 48vh;
+                    width: 3.5%;
+                    opacity: 0;
+                    border: none;
+                }
+                .absoluteBR:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .bottom{
+        border: 1px solid black;
+        height: 12vh;
+        .col-2{
+            @include displayFlex(row,center,center);
+            height: 12vh;
+            ul{
+                @include displayFlex(column,center,'');
+                list-style: none;
+                li{
+                    a{
+                        text-decoration: none;
+                        color: $font-black;
+                    }
+                }
+            }
+        }
+        .col-8{
+            @include displayFlex(row,center,center);
+            background-color: $background-black;
+            color: $font-white;
+        }
+    }
+    .form{
+        height: 62vh;
+        background-color: $background-black;
+        input{
+            width: 100%;
+            margin-top: 10px;
+        }
+        .detail{
+            .delete{
+                margin-top: 10px;
+                border: none;
+                width: 32px;
+                .trashIcon{
+                    width: 100%;
+                }
+            }
+            input{
+                border-radius: 20px;
+                text-align: center;
+            }
+        }
+
+
+        select{
+            width: 100%;
+        }
+        .buttonOrder{
+            margin-top: 50px;
+            width: 105px;
+            border-radius: 20px;
+            background:$background-gray;
+            color: $font-white;
+        }
+    }
+    .information{
+        margin-top: 150px;
+        .row{
+            @include displayFlex(row,center,center);
+        }
+    }
+    .orderRight{
+        @include displayFlex(row,center,center);
+        .total{
+            li{
+                color: $font-white;
+            }
+        }
+    }
+}

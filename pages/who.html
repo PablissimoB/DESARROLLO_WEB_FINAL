@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../assets/img/logo.jpg" type="image/x-icon">
+    <title>BONI'S</title>
+</head>
+
+<body>
+
+    <div id="box-object"></div>
+
+    <!---------------------------------------------------------------------------------------------->
+    <!---------------------------------------------------------------------------------------------->
+    <!--Desktop-->
+    <div class="desktop">
+
+        <div class="container-fluid">
+            <!--Header-->
+            <header class="row">
+                <div class="col-2">
+                    <img src="../assets/img/logoDesktop.jpg" alt="logotipo">
+                </div>
+                <nav class="col-8">
+                    <ul>
+                        <li><a href="../index.html">ABOUT US</a></li>
+                        <li><a href="menu.html">MENU</a></li>
+                    </ul>
+                </nav>
+                <div class="col-2">
+                    <ul class="marginTop">
+                        <li>TASTE</li>
+                        <li>IT</li>
+                    </ul>
+                </div>
+            </header>
+            
+
+            <!--Main-->
+            <main>
+                
+                <div class="row main">
+                    <!--Middle Menu Left-->
+                    <div class="col-2 menu">
+                        <h1>ABOUT US</h1>
+                        <ul>
+                            <li class="marginTop"><a href="../index.html">What</a></li>
+                            <li class="marginTop"><a href="who.html">Who</a></li>
+                            <li class="marginTop"><a href="where.html">Where</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="col-8" id="middle">
+                        <div class="row padding contentAnimation">
+                            <div>
+                                <p><strong>HEAD CHEF AND CO-FOUNDER: </strong> MONSERRAT KINEN, Juan Pablo</p>
+                                <p><strong>OUR KITCHENERS: </strong> ALVARO, Segismundo - TORRES, Francina</p>
+                                <p><strong>OUR BAKERS: </strong> DIAZ, Cecilia - MONSERRAT, Ana Laura</p>
+                                <p><strong>OUR PASTRIES: </strong>MONSERRAT KINEN, Juan Pablo - GONZALEZ, Paolo</p>
+                                <img src="../assets/img/imageWho.jpg" class="imagen" alt="imagenCocineros">
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!--Middle Order Right-->
+                    <div class="menu col-2">
+                        <div class="row">
+                            <div class="col-2">
+                                <img src="../assets/img/order.jpg" class="orderImg" alt="icono">
+                            </div>
+                            <h1 class="col-4">ORDER</h1>
+                        </div>
+                        <div class="row detalle">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td>Total: </td>
+                                            <td>$ 0.00</td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                                <button class="btn btn-secondary" onclick="animacionDesktop();">Check</button>
+                        </div>
+                    </div>
+                </div>
+                
+
+
+                <!--Bottom-->
+                <div class="row bottom">
+
+                    <div class="col-2">
+                        <ul>
+                            <li>FEEL</li>
+                            <li>IT</li>
+                        </ul>                          
+                    </div>
+
+                    <div class="col-8">
+                        Address: Av. Velez Sarsfield - CP 5000- CORDOBA , ARGENTINA
+                    </div>
+
+                    <div class="col-2">
+                        <ul>
+                            <li>LIVE</li>
+                            <li>IT</li>
+                        </ul>
+                    </div>
+                </div>
+            </main>
+            
+
+
+            <!--Footer-->
+            <footer>
+                <div class="">
+                    Sitio elaborado por Pablissimos
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
+    <!---------------------------------------------------------------------------------------------->
+    <!---------------------------------------------------------------------------------------------->
+    <!--Mobile-->
+    <div class="mobile" id="mobile">
+        <div class="container-fluid">
+            
+            <header class="row">
+                <div class="col">
+                    <img src="../assets/img/logoMobile.jpg" alt="logotipo">
+                </div>
+                <nav class="col">
+                    <ul class="row">
+                        <li><a href="../index.html">ABOUT US</a></li>
+                        <li><a href="menu.html">MENU</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main class="row">
+                <div class="col-4">
+                    <h1>ABOUT US</h1>
+                    <ul>
+                        <li><a href="../index.html">What</a></li>
+                        <li><a href="who.html">Who</a></li>
+                        <li><a href="where.html">Where</a></li>
+                    </ul>
+                </div>
+                <div class="col-8 med contentAnimation">
+                    <div>
+                        <p><strong>HEAD CHEF AND CO-FOUNDER: </strong> MONSERRAT KINEN, Juan Pablo</p>
+                        <p><strong>OUR KITCHENERS: </strong> ALVARO, Segismundo - TORRES, Francina</p>
+                        <p><strong>OUR BAKERS: </strong> DIAZ, Cecilia - MONSERRAT, Ana Laura</p>
+                        <p><strong>OUR PASTRIES: </strong>MONSERRAT KINEN, Juan Pablo - GONZALEZ, Paolo</p>
+                    </div>
+                </div>
+            </main>
+
+            <footer>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="row rectangles">
+                            <ul>
+                                <li>TASTE</li>
+                                <li>IT</li>
+                            </ul>
+                        </div>
+                        <div class="row rectangles">
+                            <ul>
+                                <li>FEEL</li>
+                                <li>IT</li>
+                            </ul>
+                        </div>
+                        <div class="row rectangles">
+                            <ul>
+                                <li>LIVE</li>
+                                <li>IT</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-8">
+                        <div class="row titulo">
+                            <div class="col-3">
+                                <img src="../assets/img/order.jpg" class="orderImg" alt="carrito">
+                            </div>
+                            <h1 class="col-9">ORDER</h1>
+                        </div>
+                        <div class="row detalle">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td>Total: </td>
+                                        <td>$ 0.00</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                            <button class="btn btn-secondary" onclick="animacionMobile ();">Check</button>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script>
+        function animacionDesktop() {
+            const desktop = document.getElementById('box-object');
+            const desktop2 = document.getElementById('middle');
+            desktop2.style.visibility = "hidden";
+            desktop.style.visibility = "visible";
+            desktop.classList.add('scale-in-tl');
+            setTimeout(() => { window.location.href = 'check.html'; }, 500);
+
+        }
+
+        function animacionMobile() {
+            const mobile = document.getElementById('box-object');
+            mobile.style.visibility = "visible";
+            mobile.classList.add('scale-in-tl');
+            setTimeout(() => { window.location.href = 'check.html'; }, 500);
+        }
+
+    </script>
+</body>
+
+</html>
