@@ -564,6 +564,7 @@
     .desktop main p {
       font-size: 14px; }
     .desktop main .bottom {
+      font-size: 12px;
       height: 14vh; }
       .desktop main .bottom .col-2 {
         height: 14vh; }
